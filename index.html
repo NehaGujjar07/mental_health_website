@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mindscape</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#home" class="navbar-logo">MindScape</a>
+      <ul class="navbar-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Section with Text and Image -->
+  <section id="home" class="home-section">
+    <div class="container">
+      <!-- Text on the Left Side -->
+      <div class="home-text">
+        <h1 class="home-title">Welcome to MindScape</h1>
+        <p class="home-subtitle">"The only journey is the journey within."</p>
+        <p class="home-description">
+          Discover mindfulness practices, mental health tools, and AI-powered support to guide you through life's challenges.
+          Whether you're looking for mindfulness exercises, mood tracking, or a compassionate chatbot, Mindscape is here to help you achieve inner peace and emotional well-being.
+        </p>
+        <a href="login.html" class="cta-btn">Login</a>
+      </div>
+
+      <!-- Image on the Right Side -->
+      <div class="home-image">
+      </div>
+    </div>
+  </section>
+
+
+
+
+ <!-- About Us Section -->
+ <section id="about" class="about-section">
+    <div class="about-container">
+      <h2>About Us</h2>
+      <p>At MindScape, we are passionate about supporting mental well-being and creating a safe space for individuals to explore their emotions, seek guidance, and embark on a journey of self-discovery. Our mission is to promote mental health awareness, provide accessible resources, and empower individuals to take control of their mental well-being.</p>
+      
+      <div class="about-content">
+        <!-- About Us Image Section -->
+        <div class="about-image">
+          <img src="images/aboutus.png" alt="Mental Health Support" />
+        </div>
+  
+        <!-- Mission Section -->
+        <div class="about-mission">
+          <h3>Our Mission</h3>
+          <p>We understand that mental health is a vital part of overall well-being, and every journey is unique. That's why we are dedicated to offering personalized, science-backed tools and resources to meet your needs.</p>
+          <ul>
+            <ul>
+                <li>Mindfulness and Meditation: Techniques to reduce stress, enhance focus, and cultivate inner peace.</li>
+                <li>Mood Tracking: Tools to help you understand and manage your emotional patterns.</li>
+                <li>MindfulBot: An AI-powered companion offering guidance, tips, and support whenever you need it.</li>
+              </ul>
+          </ul>
+          <p>Our goal is to make mental health support accessible to everyone, breaking down barriers and fostering a community of understanding and growth.</p>
+        </div>
+      </div>
+  
+      <!-- Call to Action -->
+      <div class="about-cta">
+        <p>Join Us in the Journey! Whether you're seeking tools for daily mental wellness or simply a place to feel understood, we’re here for you. </p>
+        <a href="#contact" class="btn">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+  
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindScape Features</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      /* General page styling */
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: 'Lora', serif;
+        box-sizing: border-box;
+      }
+  
+      /* Section styles */
+      section {
+        min-height: 100vh; /* Make each section at least the height of the viewport */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+      }
+  
+      #features {
+        background-color: #D8BFD8;
+      }
+  
+      /* Feature cards container */
+      .features-container {
+        display: flex;
+        flex-wrap: wrap; /* Allows wrapping on smaller screens */
+        justify-content: center; /* Centers the cards */
+        gap: 20px; /* Adds space between cards */
+        max-width: 1200px; /* Restricts the width of the feature container */
+        margin: auto;
+      }
+  
+      /* Feature card styles */
+      .feature-card {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 300px;
+        text-align: center;
+      }
+  
+      .feature-card img {
+        max-width: 100px;
+        height: auto;
+        margin-bottom: 10px;
+      }
+  
+      .feature-card h3 {
+        font-size: 1.5rem;
+        color: #333;
+        margin: 10px 0;
+      }
+  
+      .feature-card p {
+        font-size: 1rem;  
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+
+   
+
+  <script src="script.js"></script>
+
+<!-- Features Section -->
+<section id="features" class="features-section">
+<h1 class="features-heading">MindScape Features</h1>
+<h3 class="features-subheading">Discover tools designed to empower your mental well-being and help you take control of your life.</h3>
+<div class="features-container">
+  
+  <!-- Feature 1: Mindfulness and Meditation -->
+  <div class="feature-card">
+    <img src="images/meditation.png" alt="Mindfulness and Meditation" class="feature-icon">
+    <h3>Mindfulness and Meditation</h3>
+    <p>Explore calming and centering exercises to enhance your mental well-being and reduce stress.</p>
+    <a href="mindfulness.html" class="btn feature-btn">Explore More</a>
+  </div>
+
+  <!-- Feature 2: MindfulBot -->
+  <div class="feature-card">
+    <img src="images/bot.png" alt="MindfulBot" class="feature-icon">
+    <h3>MindfulBot</h3>
+    <p>Your AI-powered companion offering advice, support, and mental health tips whenever you need it.</p>
+    <a href="chatbot.html" class="btn feature-btn">Talk to MindfulBot</a>
+  </div>
+
+  <!-- Feature 3: Mood Tracker -->
+  <div class="feature-card">
+    <img src="images/mood.png" alt="Mood Tracker" class="feature-icon">
+    <h3>Mood Tracker</h3>
+    <p>Track your emotional well-being with easy-to-use tools that help you understand your mood patterns.</p>
+    <a href="mood-tracker.html" class="btn feature-btn">Track My Mood</a>
+  </div>
+</div>
+</section>
+
+
+<!-- Contact Us Section -->
+<section id="contact" class="contact-section">
+    <div class="contact-container">
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you! Reach out to us with any questions, feedback, or inquiries.</p>
+      <div class="contact-content">
+        <!-- Contact Information -->
+        <div class="contact-info">
+          <div class="contact-item">
+            <img src="images/email.png" alt="Email Icon" class="contact-icon">
+            <p>Email: <a href="mailto:mindscape@gmail.com">mindscape@gmail.com</a></p>
+          </div>
+          <div class="contact-item">
+            <img src="images/contact.webp" alt="Phone Icon" class="contact-icon">
+            <p>Phone: <a href="tel:+919972675973">+91 9972675973</a></p>
+          </div>
+          <div class="contact-item">
+            <img src="images/location.png" alt="Location Icon" class="contact-icon">
+            <p>Address: 123 Main Street, Bangalore</p>
+          </div>
+        </div>
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h3>Send Us a Message</h3>
+          <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+</main>
+
+
+
+</body>
+</html>

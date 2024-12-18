@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Login - MindScape</title>
+      <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #E6E6FA; /* Lavender color */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .background-shape {
+            position: absolute;
+            top: -100px;
+            left: -100px;
+            width: 700px;
+            height: 700px;
+            background: #99b4df; /* Thistle purple */
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        .right-circle {
+            position: absolute;
+            top: 50%;
+            right: -150px;
+            width: 300px;
+            height: 300px;
+            background: #BA55D3; /* Medium orchid */
+            border-radius: 50%;
+            z-index: -1;
+            transform: translateY(-50%);
+        }
+
+        .circle-one {
+            position: absolute;
+            bottom: -100px;
+            right: 100px;
+            width: 200px;
+            height: 200px;
+            background: #bedfdb; /* Gold */
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        .circle-two {
+            position: absolute;
+            top: 20px;
+            right: 50px;
+            width: 150px;
+            height: 150px;
+            background: #66afa5; /* Orange Red */
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #4B0082; /* Indigo */
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            color: #4B0082;
+            display: block;
+            text-align: left;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #CCC;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        button {
+            width: 100%;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            background: #9370DB; /* Medium Purple */
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background: #7B68EE; /* Slightly darker purple */
+        }
+
+        a {
+            color: #4B0082;
+            text-decoration: none;
+            margin-top: 1rem;
+            display: block;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+      <div class="login-container">
+        <h1>Welcome Back</h1>
+        <!-- Form for login -->
+        <form action="/login" method="POST">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Enter your username" required>
+    
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+    
+          <button type="submit">Login</button>
+        </form>
+        <a href="/forgot-password">Forgot your password?</a>
+        <a href="/signup">Create a new account</a>
+      </div>
+    </body>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mindfulness and Meditation</title>
+  <link rel="stylesheet" href="mindfulness.css"> <!-- External CSS File -->
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#home" class="navbar-logo">MindScape</a>
+      <ul class="navbar-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About Us</a></li>
+        <li><a href="index.html">Features</a></li>
+        <li><a href="index.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Section: Mindful Meditation -->
+  <section id="mindful-meditation">
+    <div class="container">
+      <!-- Title Section -->
+      <div class="title-section">
+        <h2 class="meditation-title">Mindful Meditation</h2>
+        <p class="meditation-subtitle">Find peace through mindfulness practices</p>
+        <p class="meditation-description">
+          Discover how mindfulness and meditation can improve your mental clarity and well-being. Explore different practices that suit your lifestyle.
+        </p>
+      </div>
+<!-- Meditation Section with 2 Columns and 6 Rows -->
+<div class="meditation-grid">
+  <div class="meditation-card">
+    <img class="meditation-icon" src="images/breathing.jpg" alt="Breathing Exercises">
+    <h4>Breathing Exercises</h4>
+    <p>Learn simple techniques to control your breathing and calm your mind.</p>
+    <button class="feature-button" data-video="https://youtu.be/I77hh5I69gA?si=xchUYvji-Kd1Mwni">Watch Video  </button>
+  </div>
+  <div class="meditation-card">
+    <img class="meditation-icon" src="images/meditation_icon.jpg" alt="Guided Meditation">
+    <h4>Guided Meditation</h4>
+    <p>Follow along with audio guides for a peaceful, mindful experience.</p>
+    <button class="feature-button" data-video="https://youtu.be/ez3GgRqhNvA?si=sbIasyPPICWJnJuR">Learn More</button>
+  </div>
+  <div class="meditation-card">
+    <img class="meditation-icon" src="images/meditation_music.jpg" alt="Mindful Playlist">
+    <h4>Mindful Playlist</h4>
+    <p>Integrate gentle movement with meditation for full-body mindfulness.</p>
+    <button class="feature-button" onclick="openSpotifyPlaylist()">Check Out Playlist</button>
+</div>
+<div class="meditation-card">
+  <img class="meditation-icon" src="images/meditation_podcast.jpg" alt="Mindful Podcast">
+  <h4>Mindful Podcast</h4>
+  <p>Discover how to scan your body for tension and relax deeply.</p>
+  <button class="feature-button" onclick="openSpotifyPodcast()">Check Out Podcast</button>
+</div>
+<div class="meditation-card">
+  <img class="meditation-icon" src="images/meditation_tips.jpg" alt="Mindful tips">
+  <h4>Mindful Tips</h4>
+  <p>Practice spreading love and kindness toward yourself and others.</p>
+  <button class="feature-button" onclick="showTips()">View Tips</button>
+</div>
+
+<!-- Modal for Tips -->
+<div id="tips-modal" class="modal">
+  <div class="modal-content">
+      <span class="close-button" onclick="closeModal()">&times;</span>
+      <h2>10 Tips for Peace and Mental Health</h2>
+      <ul id="tips-list">
+          <!-- Tips will be dynamically added here -->
+      </ul>
+  </div>
+</div>
+
+  <div class="meditation-card">
+    <img class="meditation-icon" src="meditation-icon-6.png" alt="Visualization Practice">
+    <h4>Visualization Practice</h4>
+    <p>Learn to use visualization techniques for relaxation and focus.</p>
+    <button class="feature-button" data-video="videos/visualization-practice.mp4">Learn More</button>
+  </div>
+</div>
+
+<!-- Video Modal -->
+<div id="video-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <video id="modal-video" controls>
+      <source src="" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+<script src="script.js"></script>
+      
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2024 Mindfulness & Meditation - All Rights Reserved.</p>
+  </footer>
+
+ 
+</body>
+</html>
